@@ -3,11 +3,7 @@ $(document).ready(() => {
     $("#video-modal").addClass("opened");
   });
 
-  $("#close-modal-btn").on("click", () => {
-    $("#video-modal").removeClass("opened");
-  });
-
-  $("#video-modal").on("click", () => {
+  $("#close-modal-btn, #video-modal").on("click", () => {
     $("#video-modal").removeClass("opened");
   });
 });
