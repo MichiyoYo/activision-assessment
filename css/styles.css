@@ -181,6 +181,12 @@ header {
   padding: 20px 20px 40px;
 }
 
+.modal .modal__body .modal__body__logo {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  max-width: 120px;
+}
+
 .modal .modal__body .modal__body__title {
   text-align: center;
   margin-top: 0;

@@ -26,6 +26,11 @@
     width: 50%;
     padding: 20px 20px 40px;
 
+    .modal__body__logo {
+      filter: invert(1);
+      max-width: 120px;
+    }
+
     .modal__body__title {
       text-align: center;
       margin-top: 0;
