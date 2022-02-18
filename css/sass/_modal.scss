@@ -8,21 +8,52 @@
   overflow: auto;
   background-color: #000;
   background-color: #0008;
-  &.open-modal {
-    display: flex;
+  &.opened {
+    display: flex !important;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: $small) {
+      .modal__body {
+        width: 98%;
+      }
+    }
   }
 
-  .modal-body {
+  .modal__body {
     display: flex;
-    flex-direction: center;
+    flex-direction: column;
     background-color: #fefefe;
     width: 50%;
-    padding: 20px;
+    padding: 20px 20px 40px;
 
-    .close-btn {
+    .modal__body__title {
+      text-align: center;
+    }
+
+    .modal__body__close-btn {
+      flex: 1;
       align-self: flex-end;
+      font-size: 30px;
+      background-color: transparent;
+      border: 0;
+      margin: 0 10px;
+    }
+
+    .modal__body__video {
+      flex: 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      iframe {
+        width: 550px;
+        height: 315px;
+        @media screen and(max-width:$small) {
+          width: 350px;
+          height: 200px;
+        }
+      }
     }
   }
 }

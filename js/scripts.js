@@ -1,5 +1,6 @@
 $(document).ready(() => {
   $("#open-modal-btn").on("click", () => {
-    console.log("hey");
+    $("#video-modal").show("fast");
+    $("#video-modal").addClass("opened");
   });
 });
