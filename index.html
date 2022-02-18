@@ -24,19 +24,22 @@
   <body>
     <header>
       <div class="hero">
-        <h1>ActiVision</h1>
-        <h2 class="intro">
-          The world's first indipendednt developer and distributor of video
-          console games & one of the largest third party video game publishers
-          in the world.
-        </h2>
+        <div class="hero__content">
+          <h1 class="hero__content__title">ActiVision</h1>
+          <h2 class="hero__content__intro">
+            The world's first indipendednt developer and distributor of video
+            console games & one of the largest third party video game publishers
+            in the world.
+          </h2>
 
-        <!-- Moddal -->
-        <button class="btn" id="open-modal-btn">Learn More</button>
+          <!-- Moddal -->
+          <button class="btn" id="open-modal-btn">Learn More</button>
+        </div>
+
         <div id="video-modal" class="modal">
           <!-- Modal Content -->
-          <div class="modal-body">
-            <button class="close">&times</button>
+          <div class="video-modal__modal-body">
+            <button class="close-btn">&times</button>
             <iframe
               width="560"
               height="315"
@@ -51,8 +54,12 @@
         </div>
       </div>
     </header>
-    <main></main>
-    <footer></footer>
-    <script src="" async defer></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/scripts.js"></script>
   </body>
 </html>

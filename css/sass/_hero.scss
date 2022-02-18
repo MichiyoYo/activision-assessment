@@ -1,2 +1,33 @@
-p {
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow;
+  padding: 20px 60px;
+
+  .hero__content {
+    width: 80%;
+    padding: 40px;
+    text-align: center;
+    background-color: red;
+
+    .hero__content__title {
+      font-size: 0;
+      width: 1px;
+      height: 1px;
+      display: inline-block;
+      overflow: hidden;
+      position: absolute;
+      border: 0;
+      padding: 0;
+      margin: 0;
+    }
+
+    .hero__content__intro {
+      color: #fff;
+    }
+  }
 }

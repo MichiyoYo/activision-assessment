@@ -8,4 +8,21 @@
   overflow: auto;
   background-color: #000;
   background-color: #0008;
+  &.open-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-body {
+    display: flex;
+    flex-direction: center;
+    background-color: #fefefe;
+    width: 50%;
+    padding: 20px;
+
+    .close-btn {
+      align-self: flex-end;
+    }
+  }
 }

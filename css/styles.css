@@ -21,6 +21,65 @@ body {
 body {
   font-family: "DINNextLTPro-Regular", Arial, sans-serif;
   font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  width: 100vw;
+  height: 100vh;
+  background-color: blue;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: yellow;
+  padding: 20px 60px;
+}
+
+.hero .hero__content {
+  width: 80%;
+  padding: 40px;
+  text-align: center;
+  background-color: red;
+}
+
+.hero .hero__content .hero__content__title {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.hero .hero__content .hero__content__intro {
+  color: #fff;
 }
 
 .modal {
@@ -33,4 +92,34 @@ body {
   overflow: auto;
   background-color: #000;
   background-color: #0008;
+}
+
+.modal.open-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal .modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: center;
+          flex-direction: center;
+  background-color: #fefefe;
+  width: 50%;
+  padding: 20px;
+}
+
+.modal .modal-body .close-btn {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
