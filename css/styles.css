@@ -82,21 +82,21 @@ header {
   width: 100vw;
   height: 100vh;
   background-color: #fff;
-  background: url(../../img/hero-bg.jpg) no-repeat center center;
+  background: url("/img/hero-bg.jpg") no-repeat center center;
   background-size: cover;
   padding: 20px 60px;
 }
 
 @media screen and (max-width: 992px) {
   .hero {
-    background: url(../../img/hero-bg-mobile.jpg) no-repeat top center;
+    background: url("/img/hero-bg-mobile.jpg") no-repeat top center;
     background-size: cover;
   }
 }
 
 @media screen and (max-width: 768px) {
   .hero {
-    background: url(../../img/hero-bg-mobile.jpg) no-repeat top center;
+    background: url("/img/hero-bg-mobile.jpg") no-repeat top center;
     background-size: cover;
     padding: 20px;
     -webkit-box-pack: end;
