@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  font-family: "DINNextLTPro-Regular", Arial, sans-serif;
+  font-family: "DIN Next LT Pro Regular", Arial, sans-serif;
   font-size: 16px;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ header {
   box-shadow: none;
   transition: all ease 150ms;
   &:hover {
-    opacity: 0.9;
     box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    color: #646d7c;
   }
 }

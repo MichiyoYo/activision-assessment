@@ -5,14 +5,15 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
-  background-color: yellow;
+  background-color: #fff;
+  background: url(../../img/hero-bg.jpg) no-repeat center center;
+  background-size: cover;
   padding: 20px 60px;
 
   .hero__content {
     width: 80%;
     padding: 40px;
     text-align: center;
-    background-color: red;
 
     .hero__content__title {
       font-size: 0;
@@ -31,6 +32,7 @@
       font-size: 30px;
       letter-spacing: 1px;
       font-weight: 200;
+      margin-bottom: 40px;
     }
   }
 }
