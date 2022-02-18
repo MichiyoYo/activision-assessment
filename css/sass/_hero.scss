@@ -9,7 +9,9 @@
   background: url(../../img/hero-bg.jpg) no-repeat center center;
   background-size: cover;
   padding: 20px 60px;
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: $x-small) {
+    background: url(../../img/hero-bg-mobile.jpg) no-repeat top center;
+    background-size: cover;
     padding: 20px;
     justify-content: flex-end;
   }
@@ -18,7 +20,7 @@
     width: 80%;
     padding: 40px;
     text-align: center;
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: $x-small) {
       padding: 70px 0;
       width: 100%;
     }

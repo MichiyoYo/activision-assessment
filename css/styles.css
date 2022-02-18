@@ -88,6 +88,8 @@ header {
 
 @media screen and (max-width: 500px) {
   .hero {
+    background: url(../../img/hero-bg-mobile.jpg) no-repeat top center;
+    background-size: cover;
     padding: 20px;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
