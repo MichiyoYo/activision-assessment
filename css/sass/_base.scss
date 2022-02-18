@@ -23,3 +23,25 @@ header {
   height: 100vh;
   background-color: blue;
 }
+
+.btn {
+  padding: 15px 40px;
+  color: rgb(56, 56, 56);
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 3px solid #fff;
+  background-image: linear-gradient(
+    180deg,
+    rgb(196, 196, 196),
+    rgb(233, 233, 233)
+  );
+  opacity: 1;
+  box-shadow: none;
+  transition: all ease 150ms;
+  &:hover {
+    opacity: 0.9;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+  }
+}
