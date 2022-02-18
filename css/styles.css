@@ -86,10 +86,26 @@ header {
   padding: 20px 60px;
 }
 
+@media screen and (max-width: 500px) {
+  .hero {
+    padding: 20px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 .hero .hero__content {
   width: 80%;
   padding: 40px;
   text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .hero .hero__content {
+    padding: 70px 0;
+    width: 100%;
+  }
 }
 
 .hero .hero__content .hero__content__title {
