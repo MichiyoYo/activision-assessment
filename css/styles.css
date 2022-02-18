@@ -162,7 +162,31 @@ header {
           align-items: center;
 }
 
+@media screen and (min-width: 1920px) {
+  .modal.opened .modal__body {
+    width: 34%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .modal.opened .modal__body {
+    width: 73%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .modal.opened .modal__body {
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .modal.opened .modal__body {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 500px) {
   .modal.opened .modal__body {
     width: 98%;
   }
@@ -232,6 +256,13 @@ header {
 @media screen and (max-width: 768px) {
   .modal .modal__body .modal__body__video iframe {
     width: 350px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modal .modal__body .modal__body__video iframe {
+    width: 300px;
     height: 200px;
   }
 }
