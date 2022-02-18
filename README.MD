@@ -2,4 +2,4 @@
 
 An implementation of a simple hero using HTML, CSS and vanilla JavaScript.
 
-Click here for the live demo.
+Check out the [live demo](https://michiyoyo.github.io/activision-assessment/)!
