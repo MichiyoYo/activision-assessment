@@ -7,17 +7,52 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>ActiVision</title>
+    <title>ActiVision | Home</title>
     <meta
       name="description"
       content="An example of implementation of a hero for ActiVision"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="//db.onlinewebfonts.com/c/93a467f70a3e7b27a9b52a686f351dbe?family=DINNextLTPro-Regular"
+      rel="stylesheet"
+      type="text/css"
+    />
     <link rel="stylesheet" href="./css/styles.min.css" />
   </head>
   <body>
-    <p>some text</p>
+    <header>
+      <div class="hero">
+        <h1>ActiVision</h1>
+        <h2 class="intro">
+          The world's first indipendednt developer and distributor of video
+          console games & one of the largest third party video game publishers
+          in the world.
+        </h2>
 
+        <!-- Moddal -->
+        <button class="btn" id="open-modal-btn">Learn More</button>
+        <div id="video-modal" class="modal">
+          <!-- Modal Content -->
+          <div class="modal-body">
+            <button class="close">&times</button>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/4fbO2-egZ3U"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              autoplay="true"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
     <script src="" async defer></script>
   </body>
 </html>
