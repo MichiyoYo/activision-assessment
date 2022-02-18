@@ -27,7 +27,7 @@ $(document).ready(() => {
 });
 
 function closeModal() {
-  $("#video-modal").fadeOut("slow", "swing", function () {
+  $("#video-modal").fadeOut("fast", "swing", function () {
     $(this).removeClass("opened");
   });
 }
