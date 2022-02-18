@@ -1,8 +1,8 @@
 @font-face {
   font-family: "DIN Next LT Pro Regular";
-  src: url("/fonts/93a467f70a3e7b27a9b52a686f351dbe.eot");
+  src: url("../fonts/93a467f70a3e7b27a9b52a686f351dbe.eot");
   /* IE9*/
-  src: url("/fonts/93a467f70a3e7b27a9b52a686f351dbe.eot?#iefix") format("embedded-opentype"), url("/fonts/93a467f70a3e7b27a9b52a686f351dbe.woff2") format("woff2"), url("/fonts/93a467f70a3e7b27a9b52a686f351dbe.woff") format("woff"), url("/fonts/93a467f70a3e7b27a9b52a686f351dbe.ttf") format("truetype"), url("/fonts/93a467f70a3e7b27a9b52a686f351dbe.svg#DIN Next LT Pro Regular") format("svg");
+  src: url("../fonts/93a467f70a3e7b27a9b52a686f351dbe.eot?#iefix") format("embedded-opentype"), url("../fonts/93a467f70a3e7b27a9b52a686f351dbe.woff2") format("woff2"), url("../fonts/93a467f70a3e7b27a9b52a686f351dbe.woff") format("woff"), url("../fonts/93a467f70a3e7b27a9b52a686f351dbe.ttf") format("truetype"), url("../fonts/93a467f70a3e7b27a9b52a686f351dbe.svg#DIN Next LT Pro Regular") format("svg");
   /* iOS 4.1- */
 }
 
