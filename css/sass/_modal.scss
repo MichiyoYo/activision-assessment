@@ -1,5 +1,7 @@
 .modal {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -8,10 +10,13 @@
   overflow: auto;
   background-color: #000;
   background-color: #0008;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity ease 500ms;
   &.opened {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
+    opacity: 1;
+    pointer-events: auto;
     @media screen and (min-width: $x-large) {
       .modal__body {
         width: 34%;
