@@ -1,33 +1,31 @@
-$(document).ready(() => {
-  //opening modal
-  $("#open-modal-btn").on("click", () => {
-    $("#video-modal").fadeIn("slow", "swing").addClass("opened");
-  });
+// Implementation with vanilla JS
 
-  //closing modal when clicking on close button
-  $("#close-modal-btn").on("click", (event) => {
-    event.stopPropagation();
+const openBtn = document.getElementById("open-modal-btn");
+const closeBtn = document.getElementById("close-modal-btn");
+const modalContainer = document.getElementById("video-modal");
+
+//open modal
+openBtn.addEventListener("click", () => {
+  modalContainer.classList.add("opened");
+});
+
+//closing with close button
+closeBtn.addEventListener("click", (e) => {
+  closeModal();
+});
+
+//closing with esc button
+document.addEventListener("keydown", (e) => {
+  if (e.keyCode === 27) {
     closeModal();
-  });
+  }
+});
 
-  //closing modal when pushing escape key
-  $(document).on("keydown", (event) => {
-    //keyCode = 27 is escape key
-    if (event.keyCode == 27) {
-      closeModal();
-    }
-  });
-
-  //closing modal when clicking outside of its body
-  $("#video-modal").on("click", function (event) {
-    if (event.target === this) {
-      closeModal();
-    }
-  });
+//use function instead of arrow func so I can access this
+modalContainer.addEventListener("click", function (e) {
+  if (e.target === this) closeModal();
 });
 
 function closeModal() {
-  $("#video-modal").fadeOut("fast", "swing", function () {
-    $(this).removeClass("opened");
-  });
+  modalContainer.classList.remove("opened");
 }
